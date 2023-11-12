@@ -1,0 +1,375 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Satoshi", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    background-color: white;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .image {
+    margin: 20px;
+}
+
+.header .container h2 {
+    margin-left: 50px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.header .container a {
+    width: 130px;
+    border-radius: 30px;
+    background-color: #FF8D5C;
+    padding: 20px;
+}
+
+.landing {
+    width: 55%;
+    border-radius: 30px;
+    background-color: #171E44;
+    margin-left: 400px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.landing .text-conter {
+    margin-left: 50px;
+    color: white;
+
+}
+
+.landing .text-conter h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.landing .text-conter a {
+    width: 180px;
+    border-radius: 30px;
+    background-color: #FF8D5C;
+    padding: 20px;
+    margin-top: 40px;
+
+}
+
+.landing .text-conter p {
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.landing .right .image {
+    min-width: 400px;
+}
+
+.landing .link {
+    display: flex;
+    justify-content: center;
+}
+
+.landing .right .app {
+    width: 180px;
+    border-radius: 30px;
+    background-color: white;
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.landing .right .app i {
+    font-size: 25px;
+}
+
+.landing .right .app h1 {
+    font-size: 16px;
+}
+
+.landing .right .link .google {
+    width: 180px;
+    border-radius: 30px;
+    background-color: white;
+    margin-top: 40px;
+    text-align: center;
+    align-items: baseline;
+}
+
+.landing .right .link .google i {
+    font-size: 26px;
+}
+
+.landing .right .google h1 {
+    font-size: 16px;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.features .feat {
+    padding: 20px;
+    text-align: center;
+}
+
+.features .container .feat .icon1 i {
+    width: 100px;
+    height: 100px;
+    background-color: #B8DDB6;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features .container .feat .icon2 i {
+    width: 100px;
+    height: 100px;
+    background-color: #FEF0C2;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.features .container .feat .icon3 i {
+    width: 100px;
+    height: 100px;
+    background-color: #D8EEF2;
+    border-radius: 50px;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .feat h3 {
+    font-weight: 500;
+    margin: 30px 0;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.features .feat p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+
+.container-phone {
+    width: 55%;
+    border-radius: 20px;
+    background-color: #fae2ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+
+}
+
+.container-phone .kvittering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-phone .kvittering h1 {
+    background-color: white;
+    font-size: 40px;
+    line-height: 2.8;
+    margin: 30px;
+
+}
+
+.container-phone img {
+    width: 300px;
+   
+}
+
+.container-phone .container p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.container-phone .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+
+.container-phone .row h2 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.container-phone .row i {
+    color: green;
+    align-items: center;
+    display: block;
+    margin-top: 40px;
+}
+
+.container-phone .row h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+
+}
+
+/* Start Footer */
+.footer {
+    background-color: #171E44;
+    padding: 70px 0 0;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.footer .box h3 {
+    font-family: unset;
+    color: white;
+    font-size: 18px;
+}
+
+.footer .box .text {
+    line-height: 2;
+    color: #b9b9b9;
+}
+
+.footer .box .links h1 {
+    color: white;
+    font-size: 18px;
+}
+
+.footer .box .line h1 {
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .footer .box .line {
+        flex-direction: column;
+    }
+}
+
+.footer .box .line i {
+    color: white;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .footer .box .line i {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+.footer .box .app {
+    width: 180px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.footer .box .app i {
+    font-size: 25px;
+}
+
+.footer .box .app h1 {
+    font-size: 16px;
+}
+
+.footer .box  .google {
+    width: 180px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.footer .box .google i {
+    font-size: 26px;
+}
+
+.footer .box .google h1 {
+    font-size: 16px;
+}
+
+
+/* End Footer */
