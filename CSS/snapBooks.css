@@ -58,102 +58,174 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    border-bottom: 4px solid white;
+
 }
 
 .header .image {
-    margin: 20px;
+    height: 40px;
+}
+
+.header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header nav .fa-bars {
+    color: #fff;
+    font-size: 22px;
+}
+
+@media (min-width: 768px) {
+    .header nav .fa-bars {
+        display: none;
+    }
+
+}
+
+.header nav ul {
+    display: flex;
 }
 
 .header .container h2 {
-    margin-left: 50px;
-    align-items: center;
     font-size: 18px;
+    margin-right: 200px;
 }
 
 .header .container a {
     width: 130px;
     border-radius: 30px;
+    color: #fff;
     background-color: #FF8D5C;
     padding: 20px;
 }
 
 .landing {
-    width: 55%;
+    width: 60%;
     border-radius: 30px;
     background-color: #171E44;
     margin-left: 400px;
     margin-top: 30px;
     display: flex;
-    justify-content: start;
-    align-items: center;
+
 }
 
 .landing .text-conter {
-    margin-left: 50px;
     color: white;
 
 }
 
 .landing .text-conter h1 {
-    font-size: 20px;
-    margin-bottom: 40px;
+    font-size: 40px;
+    margin-bottom: 100px;
+    margin-left: 150px;
 }
 
 .landing .text-conter a {
-    width: 180px;
+    width: 200px;
     border-radius: 30px;
+    color: white;
     background-color: #FF8D5C;
     padding: 20px;
     margin-top: 40px;
+    margin-left: 150px;
 
 }
 
 .landing .text-conter p {
-    font-size: 18px;
-    margin-top: 50px;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 150px;
 }
 
-.landing .right .image {
-    min-width: 400px;
+.landing .right {
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.landing .right img {
+    height: 500px;
+    width: 500px;
+    margin-right: 50px;
+    margin-top: 20px;
+    object-fit: cover;
+    background-color: #97D1D5;
+    border-radius: 77% 23% 33% 67% / 58% 37% 63% 42%;
+    border-radius: 40% 60% 39% 61% / 39% 34% 66% 61%;
 }
 
 .landing .link {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .landing .right .app {
-    width: 180px;
+    width: 200px;
+    height: 80px;
     border-radius: 30px;
     background-color: white;
     margin-top: 40px;
-    text-align: center;
     margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 .landing .right .app i {
-    font-size: 25px;
+    font-size: 40px;
+    margin-left: 25px;
+    margin-right: 20px;
+
 }
 
 .landing .right .app h1 {
     font-size: 16px;
+    margin-right: 20px;
+
 }
 
-.landing .right .link .google {
-    width: 180px;
+.landing .right .app a {
+    color: #171E44;
+    margin-bottom: 20px;
+}
+
+.landing .right .google {
+    width: 200px;
+    height: 80px;
     border-radius: 30px;
     background-color: white;
     margin-top: 40px;
-    text-align: center;
-    align-items: baseline;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.landing .right .link .google i {
-    font-size: 26px;
+.landing .right .google i {
+    font-size: 35px;
+    margin-left: 25px;
+    margin-right: 20px;
 }
 
 .landing .right .google h1 {
     font-size: 16px;
+    margin-right: 20px;
+}
+
+.landing .right .google a {
+    color: black;
+    margin-bottom: 20px;
+
 }
 
 .features .container {
@@ -179,6 +251,7 @@ ul {
     justify-content: center;
     align-items: center;
 }
+
 .features .container .feat .icon2 i {
     width: 100px;
     height: 100px;
@@ -191,6 +264,7 @@ ul {
     justify-content: center;
     align-items: center;
 }
+
 .features .container .feat .icon3 i {
     width: 100px;
     height: 100px;
@@ -220,11 +294,14 @@ ul {
 .container-phone {
     width: 55%;
     border-radius: 20px;
-    background-color: #fae2ee;
+    background-color: #fce5f0;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 130px 0px 0px 0px;
 
 }
 
@@ -236,20 +313,24 @@ ul {
 
 .container-phone .kvittering h1 {
     background-color: white;
+    border-radius: 10px;
     font-size: 40px;
     line-height: 2.8;
-    margin: 30px;
+    padding: 40px;
+    align-content: center;
+    align-items: center;
 
 }
 
 .container-phone img {
+    margin-top: 30px;
     width: 300px;
-   
+
 }
 
 .container-phone .container p {
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .container-phone .row {
@@ -263,23 +344,23 @@ ul {
 }
 
 .container-phone .row h2 {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 40px;
     margin-left: 20px;
 }
 
 .container-phone .row i {
     color: green;
-    align-items: center;
+    text-align: center;
     display: block;
     margin-top: 40px;
 }
 
 .container-phone .row h1 {
-    font-size: 30px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 40px;
-
+    margin-left: 40px;
 }
 
 /* Start Footer */
@@ -300,7 +381,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
 .footer .box h3 {
@@ -311,7 +392,7 @@ ul {
 
 .footer .box .text {
     line-height: 2;
-    color: #b9b9b9;
+    color: #fff
 }
 
 .footer .box .links h1 {
@@ -341,35 +422,72 @@ ul {
         margin-bottom: 15px;
     }
 }
-.footer .box .app {
-    width: 180px;
-    border-radius: 30px;
-    background-color: white;
-    text-align: center;
+
+.footer .boxs h2 {
+    font-size: 18px;
+    color: white;
 }
 
-.footer .box .app i {
+.footer .boxs .app {
+    width: 200px;
+    height: 80px;
+    border-radius: 30px;
+    background-color: white;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer .boxs .app i {
     font-size: 25px;
+    margin-left: 25px;
+    margin-right: 20px;
 }
 
-.footer .box .app h1 {
+.footer .boxs .app h1 {
     font-size: 16px;
+    margin-right: 20px;
+
 }
 
-.footer .box  .google {
-    width: 180px;
+.footer .boxs .app a {
+    color: #171E44;
+    margin-bottom: 20px;
+}
+
+.footer .boxs .google {
+    width: 200px;
+    height: 80px;
     border-radius: 30px;
     background-color: white;
-    text-align: center;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer .box .google i {
-    font-size: 26px;
+.footer .boxs .google i {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 20px;
 }
 
-.footer .box .google h1 {
+.footer .boxs .google h1 {
     font-size: 16px;
+    margin-right: 20px;
+
 }
 
+.footer .boxs .google a {
+    color: #171E44;
+    margin-bottom: 20px;
+}
 
 /* End Footer */
