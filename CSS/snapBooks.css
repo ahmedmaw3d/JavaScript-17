@@ -187,12 +187,11 @@
 }
 
 .features i {
-    background-color: #B8DDB6;
     color: #FFF;
     margin-bottom: 10px;
-    width: 80px;
-    height: 80px;
-    line-height: 60px;
+    width: 100px;
+    height: 100px;
+    line-height: 70px;
     padding: 15px;
 }
 
