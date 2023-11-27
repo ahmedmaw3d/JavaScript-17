@@ -54,6 +54,7 @@
 .choose-us {
     border-radius: 30px;
     background-color: #171E44;
+    position: relative;
 }
 
 .choose-us .h1 {
@@ -163,27 +164,40 @@
     margin-left: 16px;
 
 }
-
-.choose-us .i {
+.choose-us .container-fluid .ico i {
     position: absolute;
-    right: 551px;
-    border-radius: 50%;
-    border: 10px solid #171E44;
-    bottom: -30px;
-}
-
-.choose-us .container-fluid .i i {
     background: #fff;
-    border-radius: 35px;
+    border-radius: 60px;
     text-align: center;
     padding: 20px 20px 20px 20px;
+    bottom: -40px;
+    right: 580px;
+    border: 10px solid #171E44;
+    fill: none;
 
 }
 
+@media (min-width:1200px) {
+    .choose-us .container-fluid  i {
+        right: 495px;
+    }
+}
+
+@media (max-width:992px) {
+    .choose-us .container-fluid  i {
+        right: 435px;
+    }
+}
+
+@media (max-width:767px) {
+    .choose-us .container-fluid  i {
+        right: 260px;
+    }
+}
 
 .features {
-   width: 100%;
-   margin: 25px;
+    width: 100%;
+
 }
 
 .features i {
@@ -193,6 +207,7 @@
     height: 100px;
     line-height: 70px;
     padding: 15px;
+    background-color: #FEF0C2;
 }
 
 .features h3 {
@@ -206,21 +221,41 @@
     font-size: 14px;
 }
 
+.features .elementor-icon {
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+    color: #69727d;
+    font-size: 50px;
+    text-align: center;
+}
+
+@media(max-width: 992px) {
+    .features .elementor-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .features {
+        padding: 30px 20px 30px 20px;
+    }
+}
+
+
 /* End Features */
 .container-phone {
     border-radius: 20px;
-    background-color: #fffcfd;
-    padding: 80px 80px 80px 80px;
+    background-color: #FFFBFD;
+    padding: 80px 80px 80px 80px
 }
 
-.container-phone .elementor-widget-wrap {
+.container-phone .container {
     position: relative;
     width: 100%;
     flex-wrap: wrap;
     align-content: flex-start;
-    padding: 80px 80px 80px 80px;
 }
-
 
 .container-phone .kvittering {
     display: flex;
@@ -230,20 +265,14 @@
 
 .container-phone .kvittering h1 {
     background-color: white;
-    border-radius: 10px;
-    font-size: 40px;
-    line-height: 2.8;
-    padding: 40px;
-    align-content: center;
-    align-items: center;
-
+    line-height: 1.5;
+    padding: 100px;
+    font-weight: bold;
+    font-size: 45px;
 }
 
 .container-phone img {
-    margin-top: 30px;
     width: 300px;
-    vertical-align: middle;
-    display: inline-block;
 
 }
 
@@ -352,7 +381,6 @@
     display: grid;
     padding: 20px;
     grid-template-columns: 49.15% 31.25% 19.71%;
-    background-color: rgb(255, 255, 255);
     box-shadow: rgb(255, 242, 249) 0px 4px 214px;
     border-radius: 40px;
 }
@@ -398,14 +426,14 @@
     background-color: #171E44;
     padding: 100px 0px 80px;
     border-radius: 20px;
-    margin-top: 75px;
 }
 
 .footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footer .box h3 {
@@ -417,77 +445,89 @@
     line-height: 1.8;
     color: #fff;
     font-size: 16px;
+    margin-top: 30px;
 }
 
-.footer .box  h1 {
+.footer .box h2 {
+    font-size: 22px;
     color: white;
-    font-size: 18px;
 }
-.footer .box li a {
+
+.footer .box h1 {
+    color: white;
+    font-size: 15px;
+    margin-top: 14px;
+}
+
+.footer .box a {
     color: white;
     font-size: 18px;
     display: block;
+    margin-top: 20px;
 }
+
 .footer .box .line i {
     color: white;
     font-size: 18px;
 }
+
 .footer .box .line a {
     color: white;
     font-size: 18px;
     display: block;
 }
+
 .footer .boxs h2 {
     font-size: 22px;
     color: white;
 }
 
+.footer .link {
+    display: block;
+}
+
 .footer .boxs .app {
     border-radius: 20px;
     background-color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 5px 10px;
-    padding: 3px;
+    padding: 6px;
 }
 
 .footer .boxs .app h1 {
     font-size: 15px;
-    /* margin-right: 20px; */
-    /* margin-left: 16px;*/
-
+    margin-left: 16px;
 }
 
 .footer .boxs .app a {
     color: #171E44;
-    /* margin-bottom: 20px;*/
+    margin-left: 16px;
 }
 
 .footer .boxs .google {
     border-radius: 20px;
     background-color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 5px 10px;
-    padding: 3px;
+    padding: 6px;
 }
 
 
 
 .footer .boxs .google h1 {
-    font-size: 15px;
+    font-size: 14px;
+    margin-left: 16px;
+
 }
 
 .footer .boxs .google a {
     color: #171E44;
-    /* margin-bottom: 20px; */
     font-size: 14px;
+    margin-left: 16px;
 
 }
 
